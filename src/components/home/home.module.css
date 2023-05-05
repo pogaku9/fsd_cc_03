@@ -1,0 +1,7 @@
+.home {
+    @apply flex flex-col justify-start min-h-[80vh] my-8 space-y-2;
+}
+
+.developer {
+    @apply text-4xl font-semibold;
+}

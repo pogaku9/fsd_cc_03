@@ -1,0 +1,5 @@
+/* Combined styles from ui-core and tailwind
+
+To be able to override the styles from ui-core, tailwindcss/utilities
+should always be present after the ui-core imports */
+@tailwind utilities;

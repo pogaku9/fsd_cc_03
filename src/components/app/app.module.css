@@ -1,0 +1,11 @@
+.app {
+    @apply w-screen h-screen bg-gray-200 overflow-auto overflow-x-hidden flex flex-col justify-between;
+}
+
+.loadingScreen {
+    @apply flex items-center justify-center text-4xl my-16;
+}
+
+.main {
+    @apply container mx-auto px-4 flex-grow w-full;
+}

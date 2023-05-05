@@ -1,0 +1,7 @@
+.instructionsContainer {
+    @apply my-12 space-y-4;
+}
+
+.cardTitle {
+    @apply text-blue-800;
+}
