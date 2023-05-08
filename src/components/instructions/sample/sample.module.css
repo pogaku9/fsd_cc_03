@@ -1,0 +1,39 @@
+.inputContainer {
+    @apply  w-full mx-auto flex flex-col items-center justify-center;
+}
+
+.inputForm {
+    @apply flex items-center justify-center self-center py-2 gap-0 w-full sm:w-1/2;
+}
+
+.weatherCardContainer {
+    @apply grid grid-flow-row grid-cols-1 sm:grid-cols-3 gap-4 my-4;
+}
+
+.weatherCard {
+    @apply bg-white rounded-md shadow-md p-4;
+}
+
+.title {
+    @apply flex flex-wrap items-center justify-between;
+}
+
+.city {
+    @apply text-2xl font-bold capitalize text-gray-500;
+}
+
+.description {
+    @apply text-xl capitalize text-gray-500;
+}
+
+.country {
+    @apply bg-orange-300 text-white rounded-full px-2 text-sm mx-1;
+}
+
+.temperature {
+    @apply text-7xl font-bold my-12;
+}
+
+.unit {
+    @apply text-2xl text-gray-500 relative -top-10;
+}

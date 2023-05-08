@@ -1,6 +1,3 @@
-// libraries
-import { Card } from "@amorphic/amorphic-ui-core";
-
 // methods / hooks / styles
 import sytles from "./instructions.module.css";;
 import wireframe from "../../assets/images/wireframe.png";
@@ -8,11 +5,11 @@ import config from "../utilities/config.json";
 
 const Instructions = () => {
     return <div className={sytles.instructionsContainer}>
-        <Card>
-            <Card.Header bordered>
-                <Card.Title classes={sytles.cardTitle}>Wireframe & Instructions</Card.Title>
-            </Card.Header>
-            <Card.Body>
+        <div className="bg-white w-full rounded-md flex flex-col p-4">
+            <div className="w-full">
+                <h2 className={sytles.cardTitle}>Wireframe & Instructions</h2>
+            </div>
+            <div>
                 <div className="flex flex-col sm:flex-row gap-2 w-full">
                     <figure className="w-full sm:w-1/2">
                         <img src={wireframe} alt="Wire Frame" className="h-96" />
@@ -26,13 +23,13 @@ const Instructions = () => {
                         <li>Display appropriate icon based on the weather condition</li>
                     </ul>
                 </div>
-            </Card.Body>
-        </Card>
-        <Card>
-            <Card.Header bordered>
-                <Card.Title classes={sytles.cardTitle}>API Details</Card.Title>
-            </Card.Header>
-            <Card.Body>
+            </div>
+        </div>
+        <div className="bg-white w-full rounded-md flex flex-col p-4">
+            <div className="w-full">
+                <h2 className={sytles.cardTitle}>API Details</h2>
+            </div>
+            <div>
                 <ul className="list-disc list-inside py-4">
                     <li>API key will be provided during the session</li>
                     <li>Example: <a className="text-blue-700" href={config.API}>{config.API}?q=&lt;city&gt;&appid=&lt;secret_key&gt;</a></li>
@@ -44,8 +41,8 @@ const Instructions = () => {
                         </a>
                     </li>
                 </ul>
-            </Card.Body>
-        </Card>
+            </div>
+        </div>
     </div>
 };
 

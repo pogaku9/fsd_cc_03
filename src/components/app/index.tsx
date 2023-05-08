@@ -13,6 +13,7 @@ import Footer from "../layout/footer";
 
 // methods / hooks / styles
 import styles from "./app.module.css";
+import Sample from "../instructions/sample";
 
 library.add(fas);
 
@@ -24,6 +25,7 @@ const App = (): JSX.Element => {
         <main className={styles.main}>
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/sample" element={<Sample />} />
             <Route path="/instructions" element={<Instructions />} />
             <Route path="*" element={<Page404 />} />
           </Routes>

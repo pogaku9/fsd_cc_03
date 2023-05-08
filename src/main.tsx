@@ -7,8 +7,6 @@ import { BrowserRouter } from "react-router-dom";
 import App from './components/app/index.tsx';
 
 // methods / hooks / styles
-import "@amorphic/amorphic-ui-core/dist/css/index.min.css";
-import "@amorphic/amorphic-ui-core/dist/css/fonts.min.css";
 import './assets/css/combined.css';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(

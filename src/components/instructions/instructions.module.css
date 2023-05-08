@@ -3,5 +3,5 @@
 }
 
 .cardTitle {
-    @apply text-blue-800;
+    @apply text-blue-800 text-2xl py-2 mb-4 border-b;
 }

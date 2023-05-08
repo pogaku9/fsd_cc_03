@@ -17,7 +17,9 @@ const Footer = () => {
             </a>
         </div>
         <div className="flex items-center justify-center gap-8 text-blue-500">
-            <Icon icon="code" />
+            <Link to="/sample">
+                <Icon icon="code" />
+            </Link>
             <Icon icon="umbrella" />
             <Icon icon="temperature-high" />
             <Icon icon="cloud-sun-rain" />
